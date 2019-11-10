@@ -1,0 +1,23 @@
+		VALIDATION SET
+Choice of language: Python3
+
+Formula used to calculate Probability: 
+	Laplace P(Ai|C)=(Nic +1)/(Nc + c)
+
+We have: P(C|X)=p(X|C)*P(C)/P(X) where C is class, X is test record
+P(X1,X2,X3...|C)=P(X1|C)*P(X2|C)*P(X3|C)*...
+Since all P(Cn|X) share same denominator which is P(X) 
+==> We just need to calculate P(X|C)*P(C), then pick out the class that has highest probability
+Once we generated array of predict values for validation dataset, we could compare those value to the actual value
+By doing so, we could see the accuracy of our classification
+
+Overall Performance:
+	Number of correct classification is 23
+	Number of incorrect classification is 7
+	Accuracy is 0.766667
+
+Accuracy for class 2 is 0.866667
+
+Accuracy for class 3 is 0.615385
+
+Accuracy for class 4 is 1.000000
